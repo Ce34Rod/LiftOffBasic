@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.form-container {
+    flex: 0 0 100%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.exercise-container {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 0 10px 20px 0;
+}
+
+.exercise-details-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Adjust padding for smaller boxes */
+    text-align: center;
+}
+
+.exercise-details-box img {
+    width: 100%;
+    max-width: 100px; /* Adjust maximum image width */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.exercise-details-box h2 {
+    color: #333;
+    font-size: 16px; /* Adjust font size for smaller boxes */
+}
+
+.exercise-details-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.exercise-details-box li {
+    margin-bottom: 4px; /* Adjust margin for smaller boxes */
+}
+
+/* Additional styling for the form if needed */
+.form-container label, .form-container input, .form-container select, .form-container textarea, .form-container button {
+    margin-bottom: 10px;
+}
+
+h2 {
+ text-align: center;
+
+}

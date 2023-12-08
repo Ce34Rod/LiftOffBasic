@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Exercises</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+
+<h2>User Exercises</h2>
+
+<!-- Display the exercise just submitted -->
+<h3>Recently Submitted Exercise</h3>
+<!--<div th:if="${exercise != null}">-->
+<!--    <div>-->
+<!--        <strong>Name:</strong> <span th:text="${exercises.exerciseName}"></span><br>-->
+<!--        <strong>Type:</strong> <span th:text="${exercises.exerciseType}"></span><br>-->
+<!--        <strong>Target Muscles:</strong> <span th:text="${exercises.targetMuscles}"></span><br>-->
+<!--        <strong>Notes:</strong> <span th:text="${exercises.exerciseNotes}"></span><br>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!-- Display all exercises for the user -->
+<h3>All User Exercises</h3>
+<div th:each="exercise : ${exercises}">
+    <div>
+        <strong>Name:</strong> <span th:text="${exercise.getExerciseName}"></span><br>
+        <strong>Type:</strong> <span th:text="${exercises.getExerciseType}"></span><br>
+        <strong>Target Muscles:</strong> <span th:text="${getTargetMuscles.targetMuscles}"></span><br>
+        <strong>Notes:</strong> <span th:text="${exercises.getExerciseNotes}"></span><br>
+    </div>
+    <hr>
+</div>
+
+</body>
+</html>
